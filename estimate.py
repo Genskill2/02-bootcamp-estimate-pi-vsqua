@@ -31,29 +31,35 @@ class TestMC(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
     
+import random
+def monte_carlo(n) :
     ins=0
     out=0
     tot=0
-    def monte_carlo(i):
-        i=i-1
-        for i!=0:
+    while n>0 : 
         x=random.random()
         y=random.random()
-        if x*x+y*y>1
-        out=out+1
-        else
-        ins=ins+1
-        tot=ins+out
-        ret=4*ins/tot
-        return ret
-n=0
-prod=1
-def walli(i)
-  n=n+1
-  for n!=i:
-    prod=prod*(4*n*n)/(4*n*n-1)
-  retu=prod*2
-  return retu
+        if x**2+y**2 >1 :
+            out = out+1
+        else :
+            ins=ins+1
+            tot=ins+out
+            ret=4*ins/tot
+        n=n-1
+    ret=(4*ins)/tot
+    return ret
+
+
+
+def wallis(i) :
+    prod=1  
+    n=1
+    while n <= i:
+        prod=prod*(4*n*n)/(4*n*n-1)
+        n=n+1
+    retu=prod*2
+    return retu
+
   
         
         
