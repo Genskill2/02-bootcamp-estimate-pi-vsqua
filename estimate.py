@@ -1,6 +1,6 @@
 import math
 import unittest
-
+import random
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
         for i in range(0, 5):
@@ -30,3 +30,35 @@ class TestMC(unittest.TestCase):
     
 if __name__ == "__main__":
     unittest.main()
+    
+    ins=0
+    out=0
+    tot=0
+    def monte_carlo(i):
+        i=i-1
+        for i!=0:
+        x=random.random()
+        y=random.random()
+        if x*x+y*y>1
+        out=out+1
+        else
+        ins=ins+1
+        tot=ins+out
+        ret=4*ins/tot
+        return ret
+n=0
+prod=1
+def walli(i)
+  n=n+1
+  for n!=i:
+    prod=prod*(4*n*n)/(4*n*n-1)
+  retu=prod*2
+  return retu
+  
+        
+        
+        
+        
+       
+        
+        
